@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advice generator app</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card" aria-live="polite">
+    <h1 id="advice-id" class="card__id">Advice #—</h1>
+    <p id="advice-text" class="card__text">Cargando consejo…</p>
+
+    <div class="divider" aria-hidden="true">
+      <span class="divider__line"></span>
+      <span class="divider__pause"><i></i><i></i></span>
+      <span class="divider__line"></span>
+    </div>
+
+    <button id="dice" class="dice" type="button" aria-label="Generar un nuevo consejo">
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"/>
+      </svg>
+    </button>
+  </main>
+
+  <footer class="attribution">
+    Reto de <a href="https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db" target="_blank" rel="noopener">Frontend Mentor</a>.
+    Datos de <a href="https://api.adviceslip.com/" target="_blank" rel="noopener">Advice Slip API</a>.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
